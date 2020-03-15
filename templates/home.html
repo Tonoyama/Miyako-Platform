@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="{{url_for('static', filename='css/home_style.css')}}">
+<link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+<title>Miyako Platform : らぁ〜めん京 業務改善用SaaS(Software as a Service) Platform</title>
+<script src="{{ url_for('static', filename='js/home.js') }}"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<body>
+    <div id="loader-bg">
+        <div id="loader">
+            <img src="/static/images/rotate_image.gif" width="80" height="80" alt="Now Loading..." />
+        </div>
+    </div>
+    <div id="content">
+    <div class="wrapper">
+        <div class="Title">
+            <p>Miyako Platform by <a href="http://ramen-miyako.com/" target="_blank" rel="noopener noreferrer">らぁ〜めん京</a></p>
+        </div>
+        <div class="btn_wrapper">
+            <div class="Dashboard_btn" onclick="location.href='/protected/'">Dashboard</div>
+
+            <div class="Login_btn" onclick="location.href='/login/'">Login</div>
+        </div>
+    </div>
+    <div class="create_acount_btn" onclick="location.href='/create_acount/'">Sign Up</div>
+    </div>
+</body>

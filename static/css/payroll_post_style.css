@@ -1,0 +1,44 @@
+table {
+    text-align: right;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+ul {
+    text-align: left;
+    padding: 0px;
+    width: 100%;
+}
+
+span#name_title {
+    display: inline-block;
+    text-align: center;
+    border: 1px solid black;
+    padding: 2px;
+    width: 110px;
+    font-size: 120%;
+    font-style: bold;
+}
+
+span#payroll_title {
+    display: inline-block;
+    text-align: center;
+    border: 1px solid black;
+    padding: 2px;
+    width: 110px;
+    font-size: 120%;
+    font-style: bold;
+}
+
+span#round_up {
+    display: inline-block;
+    text-align: center;
+    border: 1px solid black;
+    padding: 1px;
+    width: 120px;
+    font-size: 120%;
+}
+
+body {
+    font-family: "Noto Sans JP", sans-serif;
+}

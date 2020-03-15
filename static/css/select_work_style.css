@@ -1,0 +1,76 @@
+body {
+  font-family: "Proxima Nova", sans-serif;
+}
+
+.btn_wrapper {
+    position: relative;
+    height: 200px;
+}
+
+.payroll_btn {
+    position: absolute;
+    top: 50;
+    left: 42%;
+    margin: auto;
+    text-align: center;
+    font-size: 250%;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: solid 1px rgb(0, 0, 0);
+    display: inline-block;
+    padding: 0.6em 2em;
+    margin: 0 0 1em;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    z-index: 1;
+  }
+.payroll_btn:hover {
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25);
+    transform: scale(1.1, 1.1);
+}
+
+.prediction_btn {
+  position: absolute;
+  top: 200;
+  left: 39%;
+  margin: auto;
+  text-align: center;
+  font-size: 250%;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
+  background-color: rgb(255, 255, 255);
+  color: #08182b;
+  border: solid 1px rgb(0, 0, 0);
+  display: inline-block;
+  padding: 0.6em 2em;
+  margin: 0 0 1em;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  z-index: 1;
+}
+.prediction_btn:hover {
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25);
+  transform: scale(1.1, 1.1);
+}
+
+.logout_btn {
+  max-width: 180px;
+  position: absolute;
+  top: 5%;
+  left: 92%;
+  border: 2px solid #ee2560;
+  font-size: 23px;
+  color: #ee2560;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: .4s;
+  z-index: 1;
+}
+
+.logout_btn:hover {
+  background-color: #ee2560;
+  border-color: #ee2560;
+  color: #f4f4f4;
+}

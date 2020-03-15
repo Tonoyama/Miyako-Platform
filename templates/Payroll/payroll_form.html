@@ -1,0 +1,33 @@
+<link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+<link rel="stylesheet" href="{{url_for('static', filename='css/payroll_form_style.css')}}">
+<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+<title>給与計算</title>
+<body>
+<h1>給与計算</h1>
+<form action="/payroll/" method="POST" enctype="multipart/form-data">
+    <div class="uploadButton">
+        <span><i class="fas fa-cloud-upload-alt"></i>ファイルをアップロード</span>
+        <input type="file" name="excel" onchange="uv.style.display='inline-block'; uv.value = this.value;" accept=".xls, .xlsx" required/>
+        <input type="text" id="uv" class="uploadValue" disabled />
+    </div>
+    <p><i class="fas fa-exclamation-triangle"></i>Google Chrome, IEでは、セキュリティの関係上ファイル名が「C:\fakepath\」と表示されます。</p>
+    <div class="shop_class">
+        <div>
+            お店を選択してください
+        </div>
+        <select id="shop_select" name="shop">
+            <option value="">お店を選択</option>
+            <option value="三条店">三条店</option>
+        </select>
+    </div>
+    <div class="month">
+        <div>
+            何月のファイルですか？
+        </div>
+        <input type="month" name="date">
+    </div>
+    <div　class="submit_btn">
+        <input id="submit_button" type="submit" value="計算">
+    </div>
+</form>
+</body>

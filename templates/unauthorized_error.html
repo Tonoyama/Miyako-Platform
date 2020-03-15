@@ -1,0 +1,10 @@
+<link rel="stylesheet" href="{{url_for('static', filename='css/unauthorized_error_style.css')}}">
+<link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+<title>未認証です</title>
+<body>
+<div class="wrapper">
+    <p><img src="/static/images/key.png"></p>
+    <p id="message">ログイン認証をお願い致します</p>
+    <div class="Login_btn" onclick="location.href='/login/'">Login</div>
+</div>
+</body>

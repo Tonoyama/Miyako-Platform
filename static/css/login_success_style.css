@@ -1,0 +1,60 @@
+p {
+    text-align: center;
+    top: 15%;
+    font-size: 300%;
+    font-style: bold;
+}
+
+.under_line {
+    background: linear-gradient(transparent 70%, red 70%);
+}
+
+body {
+    font-family: "Proxima Nova", sans-serif;
+}
+
+.protected_btn {
+    position: absolute;
+    top: 100;
+    left: 42%;
+    margin: auto;
+    text-align: center;
+    font-size: 250%;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: solid 1px rgb(0, 0, 0);
+    display: inline-block;
+    padding: 0.6em 2em;
+    margin: 0 0 1em;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    z-index: 1;
+  }
+.protected_btn:hover {
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25);
+    transform: scale(1.1, 1.1);
+}
+
+.logout_btn {
+    max-width: 180px;
+    position: absolute;
+    top: 8%;
+    left: 92%;
+    border: 2px solid #ff371d;
+    font-size: 23px;
+    color: #ff371d;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: .4s;
+    z-index: 1;
+  }
+
+.logout_btn:hover {
+    background-color: #ff6e5b;
+    border-color: #ff371d;
+    color: #FFF;
+  }
+  

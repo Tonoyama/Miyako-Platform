@@ -1,0 +1,15 @@
+<link rel="stylesheet" href="{{url_for('static', filename='css/select_work_style.css')}}">
+<link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>選択画面</title>
+
+<body>
+<a href="/logout/" class="logout_btn">Logout</a>
+
+<div class="btn_wrapper">
+    <div class="payroll_btn" onclick="location.href='/payroll/'">給与計算</div>
+
+    <div class="prediction_btn" onclick="location.href='/prediction/'">来客・売上予測</div>
+</div>
+
+</body>

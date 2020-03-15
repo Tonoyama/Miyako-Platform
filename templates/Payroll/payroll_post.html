@@ -1,0 +1,22 @@
+<link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+<link rel="stylesheet" href="{{url_for('static', filename='css/payroll_post_style.css')}}">
+<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+</head>
+<title>給与計算</title>
+
+<body>
+    <h1>給与計算：{{ date }}月分 {{ shop }}</h1>
+    <h1>{{ filepath }}</h1>
+    <h2>総人件費：{{ "\u00A5{:,d}".format(all_total_cost) }}</h2>
+    <h2>総労働時間：{{ all_work_time }}</h2>
+    <h2>総通常労働時間：{{ total_noon_work_list }}</h2>
+    <h2>総深夜労働時間：{{ total_night_work_list }}</h2>
+<table>
+    <span id="payroll_title">名前</span><span id="payroll_title">合計給与</span><span id="round_up">通常労働時間</span><span id="round_up">深夜労働時間</span>
+    {% for payroll_user, sum_wage_per_day, list_noon_work_list, list_night_work_list in payroll_round_up %}
+        <ul><span id="payroll_title">{{ payroll_user }}</span> <span id="payroll_title">{{ "\u00A5{:,d}".format(sum_wage_per_day) }}</span> <span id="payroll_title">{{ list_noon_work_list }}</span> <span id="payroll_title">{{ list_night_work_list }}</span></ul>
+    {% endfor %}
+</table>
+</body>
